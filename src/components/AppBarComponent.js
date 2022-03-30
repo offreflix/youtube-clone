@@ -1,13 +1,21 @@
-import { AppBar, IconButton, Toolbar, Button, Switch } from '@material-ui/core';
+import {
+  AppBar,
+  IconButton,
+  Toolbar,
+  Button,
+  Switch,
+  InputBase,
+} from '@material-ui/core';
 
 import MenuIcon from '@material-ui/icons/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
+import SearchIcon from '@material-ui/icons/Search';
 
 import VideoCall from '@material-ui/icons/VideoCall';
 import MoreVert from '@material-ui/icons/MoreVert';
 import Apps from '@material-ui/icons/Apps';
 
-function AppBarComponent() {
+function AppBarComponent({ theme, classes, darkMode, setDarkMode }) {
   return (
     <AppBar color="inherit" className={classes.appBar}>
       <Toolbar>
@@ -24,12 +32,27 @@ function AppBarComponent() {
           }
           alt="logo"
         />
+        <div className={classes.grow} />
+
+        <div className={classes.search}>
+          <div className={classes.searchIcon}>
+            <SearchIcon />
+          </div>
+          <InputBase
+            placeholder="Pesquisar"
+            classes={{
+              root: classes.inputRoot,
+              input: classes.inputInput,
+            }}
+            inputProps={{ 'aria-label': 'search' }}
+          />
+        </div>
 
         <div className={classes.grow} />
 
         <Switch
-          value={props.darkMode}
-          onChange={() => props.setDarkMode(!props.darkMode)}
+          value={darkMode}
+          onChange={() => setDarkMode(!darkMode)}
           className={classes.icons}
         />
 
