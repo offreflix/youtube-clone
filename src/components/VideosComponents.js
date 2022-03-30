@@ -1,7 +1,7 @@
 import { Toolbar, Typography, Box, Grid } from '@material-ui/core';
 import videos from '../api/api';
 
-function VideosComponents() {
+function VideosComponents({ classes }) {
   return (
     <Box p={8}>
       <Toolbar />
@@ -13,7 +13,7 @@ function VideosComponents() {
         Recomendados
       </Typography>
 
-      <Grid container spacing={2}>
+      <Grid container spacing={2} className={classes.videoContainer}>
         {videos.map((item, index) => (
           <Grid item lg={3} md={3} sm={6} xs={12}>
             <Box>

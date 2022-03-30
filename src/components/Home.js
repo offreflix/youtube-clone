@@ -20,6 +20,32 @@ const useStyles = makeStyles((theme) => ({
   listItemText: { fontSize: 14 },
   subheader: { textTransform: 'uppercase', fontWeight: 'bold' },
   teste: { fontSize: 14 },
+  videoContainer: { cursor: 'pointer' },
+
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  '@global': {
+    '*': {
+      scrollbarWidth: 'auto',
+      scrollbarColor:
+        theme.palette.type === 'dark' ? '#6C6C6C #ffffff' : '#6C6C6C #ffffff',
+    },
+
+    /* Chrome, Edge, and Safari */
+    '*::-webkit-scrollbar': {
+      width: '14px',
+    },
+
+    '*::-webkit-scrollbar-track': {
+      background: theme.palette.background.dark,
+    },
+
+    '*::-webkit-scrollbar-thumb': {
+      backgroundColor: '#6C6C6C',
+      borderRadius: '10px',
+      border: `3px solid ${theme.palette.background.dark}`,
+    },
+  },
 
   search: {
     position: 'relative',
@@ -80,7 +106,7 @@ function Home(props) {
       <Box display="flex">
         <LeftBarComponent classes={classes} />
 
-        <VideosComponents />
+        <VideosComponents classes={classes} />
       </Box>
     </div>
   );
