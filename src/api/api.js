@@ -1,3 +1,6 @@
+var path = process.env.PUBLIC_URL + '/images/thumb';
+var avatarPath = process.env.PUBLIC_URL + '/images';
+
 const videos = [
   {
     id: 1,
@@ -5,8 +8,8 @@ const videos = [
     channel: 'Filipe Ramos',
     views: '385 mil visualizações',
     date: 'há 2 semana',
-    avatar: '/images/filipeRamos.jpg',
-    thumb: '/images/thumb1.jpg',
+    avatar: `${avatarPath}/filipeRamos.jpg`,
+    thumb: `${path}1.jpg`,
   },
   {
     id: 2,
@@ -14,8 +17,8 @@ const videos = [
     channel: 'Filipe Ramos',
     views: '365 mil visualizações',
     date: 'há 2 semana',
-    avatar: '/images/filipeRamos.jpg',
-    thumb: '/images/thumb2.jpg',
+    avatar: `${avatarPath}/filipeRamos.jpg`,
+    thumb: `${path}2.jpg`,
   },
   {
     id: 3,
@@ -23,8 +26,8 @@ const videos = [
     channel: 'Filipe Ramos',
     views: '3,5 mi de visualizações',
     date: 'há 1 ano',
-    avatar: '/images/filipeRamos.jpg',
-    thumb: '/images/thumb3.jpg',
+    avatar: `${avatarPath}/filipeRamos.jpg`,
+    thumb: `${path}3.jpg`,
   },
   {
     id: 4,
@@ -32,8 +35,8 @@ const videos = [
     channel: 'Filipe Ramos',
     views: '1,4 mi de visualizações',
     date: 'há 5 anos',
-    avatar: '/images/filipeRamos.jpg',
-    thumb: '/images/thumb4.jpg',
+    avatar: `${avatarPath}/filipeRamos.jpg`,
+    thumb: `${path}4.jpg`,
   },
   {
     id: 5,
@@ -41,8 +44,8 @@ const videos = [
     channel: 'Filipe Ramos',
     views: '1,4 mi de visualizações',
     date: 'há 3 anos',
-    avatar: '/images/filipeRamos.jpg',
-    thumb: '/images/thumb5.jpg',
+    avatar: `${avatarPath}/filipeRamos.jpg`,
+    thumb: `${path}5.jpg`,
   },
   {
     id: 6,
@@ -50,8 +53,8 @@ const videos = [
     channel: 'Filipe Ramos',
     views: '880 mil visualizações',
     date: 'há 10 semanas',
-    avatar: '/images/filipeRamos.jpg',
-    thumb: '/images/thumb6.jpg',
+    avatar: `${avatarPath}/filipeRamos.jpg`,
+    thumb: `${path}6.jpg`,
   },
   {
     id: 7,
@@ -59,8 +62,8 @@ const videos = [
     channel: 'Filipe Ramos',
     views: '2,5 mi de visualizações',
     date: 'há 3 anos',
-    avatar: '/images/filipeRamos.jpg',
-    thumb: '/images/thumb7.jpg',
+    avatar: `${avatarPath}/filipeRamos.jpg`,
+    thumb: `${path}7.jpg`,
   },
   {
     id: 8,
@@ -69,8 +72,8 @@ const videos = [
     channel: 'Filipe Ramos',
     views: '1,4 mi de visualizações',
     date: 'há 1 anos',
-    avatar: '/images/filipeRamos.jpg',
-    thumb: '/images/thumb8.jpg',
+    avatar: `${avatarPath}/filipeRamos.jpg`,
+    thumb: `${path}8.jpg`,
   },
 ];
 
