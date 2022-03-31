@@ -1,16 +1,20 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
-import { ThemeProvider, makeStyles } from '@material-ui/core';
+import { ThemeProvider } from '@material-ui/core';
 import { createTheme } from '@material-ui/core/styles';
 
 import Home from './components/Home';
 
-const useStyles = makeStyles({
-  root: {},
-});
-
 function App() {
   const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    setDarkMode(JSON.parse(window.localStorage.getItem('count')));
+  }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem('count', darkMode);
+  }, [darkMode]);
 
   const theme = createTheme({
     palette: {

@@ -15,6 +15,8 @@ import VideoCall from '@material-ui/icons/VideoCall';
 import MoreVert from '@material-ui/icons/MoreVert';
 import Apps from '@material-ui/icons/Apps';
 
+var path = process.env.PUBLIC_URL;
+
 function AppBarComponent({ theme, classes, darkMode, setDarkMode }) {
   return (
     <AppBar color="inherit" className={classes.appBar}>
@@ -27,8 +29,8 @@ function AppBarComponent({ theme, classes, darkMode, setDarkMode }) {
           className={classes.logo}
           src={
             theme.palette.type === 'dark'
-              ? '/images/branco.png'
-              : '/images/preto.png'
+              ? `${path}/images/branco.png`
+              : `${path}/images/preto.png`
           }
           alt="logo"
         />
@@ -51,6 +53,7 @@ function AppBarComponent({ theme, classes, darkMode, setDarkMode }) {
         <div className={classes.grow} />
 
         <Switch
+          checked={darkMode}
           value={darkMode}
           onChange={() => setDarkMode(!darkMode)}
           className={classes.icons}
