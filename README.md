@@ -1,8 +1,13 @@
 <div align="center">
   <h1>Youtube Clone</h1>
+  <image src="https://user-images.githubusercontent.com/91212364/161064655-82cdab7a-7eab-4a99-82d3-52ca03898bdc.png" style="width:500px;"/>
+  
+ 
 
-  <p>Resolvi me desafiar à utilizar tecnologias que não havia implementado ainda, peguei uma landing page que havia feito e expandi ela com novas páginas e funcionalidades, visando a responsividade. Adicionei rotas com o React Router, Estilizei com o SASS e mais tarde resolvi implementar o Typescript, então converti todo site de Javascript pra Typescript.
-Sobre a responsividade, quando a tela é diminuida fiz uma nav pra mobile e tablet com Javascript e React usando State, mudar o Flex/Grid pra caber na tela e o texto "Já tem uma conta?" ficaria muito grande pra celular, então quando chega em determinado tamanho muda pra "Login".</p>
+  <p>Um clone da homepage do YouTube criado para fins estudantis e desafiar à utilizar novas tecnologias.</p>
+  <p>O site é só uma demo, porém possui funcionalidade de Theme Switcher utilizando useState e guarda na memória do navegador utilizando useEffect e localStorage. A estilização do site foi feita utilizando Material UI.</p>
+  
+  <image src="https://user-images.githubusercontent.com/91212364/161064139-e2ad4c93-99d5-4d22-b6d8-e35509565331.gif" style="width:500px;"/>
   
   <hr/>
    <div>
@@ -10,9 +15,7 @@ Sobre a responsividade, quando a tela é diminuida fiz uma nav pra mobile e tabl
      <p>Foram utilizadas as seguintes tecnologias.</p>
      <span>React.Js</span><br>
      <span>Javascript</span><br>
-     <span>Typescript</span><br>
-     <span>CSS</span><br>
-     <span>SASS/SCSS</span><br>
+     <span>Material-UI</span><br>
    </div>
   <hr/>
   
